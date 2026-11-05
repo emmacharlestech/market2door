@@ -1134,3 +1134,29 @@ svg { flex-shrink: 0; }
   .ui-feature__heart, .ui-tag, .ui-glass { -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(9, 43, 29, .45); }
   .hero__img { will-change: auto; }
 }
+
+/* ---------- FAQ ---------- */
+.faq { background: var(--white); }
+.faq__inner { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(36px, 6vw, 96px); align-items: start; }
+.faq__head { position: sticky; top: 120px; }
+.faq__head .lead { margin-top: 20px; }
+.faq__head .lead a { color: var(--navy); font-weight: 700; text-underline-offset: 3px; }
+.faq__cta { margin-top: 28px; }
+.faq__list { display: grid; gap: 12px; }
+.faq__item { border: 1px solid var(--line); border-radius: 20px; background: var(--ivory); transition: background-color .3s, border-color .3s, box-shadow .3s; }
+.faq__item[open] { background: #fff; border-color: rgba(214, 174, 88, .55); box-shadow: 0 18px 40px -28px rgba(9, 43, 29, .35); }
+.faq__q { display: flex; align-items: center; justify-content: space-between; gap: 18px; min-height: 64px; padding: 18px 22px; cursor: pointer; list-style: none; font-size: 1.06rem; font-weight: 700; line-height: 1.35; color: var(--navy); }
+.faq__q::-webkit-details-marker { display: none; }
+.faq__q:focus-visible { outline: 3px solid var(--coral); outline-offset: 2px; border-radius: 20px; }
+.faq__icon { flex: none; width: 34px; height: 34px; padding: 8px; border-radius: 50%; background: var(--navy); fill: none; stroke: #fff; stroke-width: 2.4; stroke-linecap: round; transition: transform .35s var(--ease-out), background-color .3s; }
+.faq__item[open] .faq__icon { transform: rotate(45deg); background: var(--coral); stroke: var(--navy); }
+.faq__a { padding: 0 22px 22px; }
+.faq__a p { max-width: 60ch; color: var(--gray-500); line-height: 1.7; }
+@media (max-width: 960px) {
+  .faq__inner { grid-template-columns: 1fr; }
+  .faq__head { position: static; }
+}
+@media (max-width: 640px) {
+  .faq__q { padding: 16px 18px; font-size: 1rem; }
+  .faq__a { padding: 0 18px 18px; }
+}
