@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /backend/
+Disallow: /uploads/
+
+Sitemap: https://market2door.ng/sitemap.xml

@@ -1,0 +1,13 @@
+# Vercel hosts only the static landing page. The PHP waitlist, admin and
+# database stay on the market2door.ng (cPanel) host.
+*.php
+admin/
+api/
+backend/
+uploads/
+deploy/
+.htaccess
+README.md
+ADMIN-LOGIN.txt
+.vscode/
+*.log

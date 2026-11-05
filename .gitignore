@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+
+# Private: server config, admin login, uploaded images
+backend/config.php
+deploy/
+uploads/*
+!uploads/.htaccess
+
+.vercel
